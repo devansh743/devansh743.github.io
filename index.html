@@ -77,6 +77,11 @@
         .card a:hover {
             text-decoration: underline;
         }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.35);
+        }
+
         .card h3 {
             margin-bottom: 10px;
             color: #93c5fd;
@@ -136,6 +141,33 @@
         html {
             scroll-behavior: smooth;
         }
+        @media(max-width:768px){
+            .skills, .projects {
+                grid-template-columns: 1fr; /* stack cards vertically on mobile */
+            }
+        }
+                /* Tablets */
+        @media (max-width: 992px) {
+            header {
+                padding: 40px 20px;
+            }
+            header h1 { font-size: 2.2rem; }
+        }
+
+        /* Mobile Phones */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            header p { font-size: 1rem; }
+            .hero-btn { width: 100%; padding: 8px 16px; margin: 5px 0; }
+            .skills, .projects { grid-template-columns: 1fr; } /* stack cards vertically */
+            section { padding: 0 15px; margin: 40px auto; }
+        }
+
+        /* Very small phones */
+        @media (max-width: 480px) {
+            header h1 { font-size: 1.6rem; }
+            section { padding: 0 10px; }
+        }
     </style>
 </head>
 <body>
@@ -149,7 +181,7 @@
     </p>
 
     <div style="margin-top:20px;">
-        <a href="#projects" class="hero-btn">View Projects</a>
+        <!-- <a href="#projects" class="hero-btn">View Projects</a> -->
         <a href="resume.pdf" download class="hero-btn secondary">Download Resume</a>
     </div>
 </header>
@@ -223,11 +255,6 @@
             <p>Machine learning system to identify fake news articles using NLP techniques.</p>
             <a href="https://github.com/devansh743">GitHub Repository</a>
         </div>
-        <div class="card">
-            <h3>Crop Recommendation System</h3>
-            <p>AI-based system that recommends suitable crops for farmers based on soil and climate data.</p>
-            <a href="https://github.com/devansh743">GitHub Repository</a>
-        </div>
     </div>
 </section> -->
 
@@ -237,8 +264,11 @@
         <div class="card">
             <h3>Competitive Coding</h3>
             <ul>
-                <li><a href="https://leetcode.com/" target="_blank">LeetCode</a></li>
-                <li><a href="https://github.com/devansh743" target="_blank">GitHub</a></li>
+                <li><a href="https://leetcode.com/u/devansh_soni077/" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+                <li><a href="https://www.hackerrank.com/profile/devansh_soni7" target="_blank" rel="noopener noreferrer">HackerRank</a></li>
+                <li><a href="https://www.codechef.com/users/devansh_soni77" target="_blank" rel="noopener noreferrer">CodeChef</a></li>
+                <li><a href="https://codeforces.com/profile/devansh_soni777" target="_blank" rel="noopener noreferrer">CodeForces</a></li>
+                <li><a href="https://github.com/devansh743" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </div>
     </div>
@@ -248,7 +278,7 @@
 <section class="contact">
     <h2>Contact</h2>
     <a href="mailto:langaliyadevansh68@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/devansh-langaliya-953656295" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/devansh-langaliya-953656295" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://github.com/devansh743" target="_blank" rel="noopener noreferrer">
         GitHub
     </a>
